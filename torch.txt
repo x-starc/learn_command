@@ -1,0 +1,6 @@
+torch常用命令
+1.gpu
+    torch.cuda.is_available()
+    torch.cuda.current_devic()    #现在使用的gpu编号
+    torch.cuda.device_count()   #gpu数量
+    torch.cuda.get_device_name(torch.cuda.current_device)

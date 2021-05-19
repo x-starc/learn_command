@@ -1,0 +1,18 @@
+docker常用命令
+1.获取所有镜像文件
+    docker ps (-a)
+2.建立一个容器
+    docker run -it (--gpus gpu编号(可以是all)) (--name 容器名字) 镜像名字 命令(/bin/bash(交互式shell))
+    －i 交互式操作
+    －t 终端
+3.运行容器
+    docker start 容器名
+4.停止容器
+    docker stop 容器名
+5.执行容器
+    docker attach 容器名    ＃ (退出时停止容器)
+    docker exec －it 容器名 命令(/bin/bash(交互式shell))  ＃ (退出时不停止容器)
+6.本地向容器传输文件
+    docker cp 本地文件路径＋文件名 容器名:容器内保存路径(/opt(目前只有这个测试成功了))
+7.容器向本地传输文件
+    docker cp 容器名:文件路径＋文件名 本地保存路径
