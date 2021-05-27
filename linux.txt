@@ -8,3 +8,5 @@ linux常用命令
     cp (-r ＃复制文件夹) 文件名 想要复制到的地址
 4.运行python文件
     python 文件名
+5.文件名寻找文件位置
+    find / -name 文件名
