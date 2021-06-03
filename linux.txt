@@ -10,3 +10,4 @@ linux常用命令
     python 文件名
 5.文件名寻找文件位置
     find / -name 文件名
+    find /etc -name '*部分文件名*'  模糊查找	

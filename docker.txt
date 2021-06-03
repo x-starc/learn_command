@@ -16,3 +16,6 @@ docker常用命令
     docker cp 本地文件路径＋文件名 容器名:容器内保存路径(/opt(目前只有这个测试成功了))
 7.容器向本地传输文件
     docker cp 容器名:文件路径＋文件名 本地保存路径
+8.查询容器ip地址
+    docker inspect --format='{{.NetworkSettings.IPAddress}}' 容器名字
+
